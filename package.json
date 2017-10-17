@@ -1,11 +1,16 @@
 {
-  "name": "node-restify-jwt-example",
+  "name": "api-node-with-restify-mySql-jwt-tests-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "test": "ava --verbose"
+  },
+  "author": "dbemfica",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbemfica/api-node-with-restify-mySql-jwt-tests-example"
   },
   "keywords": [],
   "author": "",
