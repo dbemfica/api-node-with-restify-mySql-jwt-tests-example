@@ -1,0 +1,23 @@
+{
+  "name": "node-restify-jwt-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "ava --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "mysql": "github:mysqljs/mysql",
+    "restify": "^6.2.0",
+    "restify-cors-middleware": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0"
+  }
+}
