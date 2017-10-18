@@ -1,13 +1,6 @@
 language: node_js
 node_js:
   - "8.6"
-env:
-  - MYSQL_HOST=127.0.0.1
-  - MYSQL_USER=root
-  - MYSQL_PASSWORD=
-  - MYSQL_DATABASE_TEST=categoria_teste
-  - CRYPTO_KEY=b7e94be5
-  - JWT_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
 services:
   - mysql
 before_install:
