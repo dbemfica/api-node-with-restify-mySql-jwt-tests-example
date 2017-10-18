@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "8"
+env:
+  - MYSQL_HOST=localhost
+  - MYSQL_USER=root
+  - MYSQL_PASSWORD=
+  - MYSQL_DATABASE_TEST=categoria_teste
+  - CRYPTO_KEY=b7e94be5
+  - JWT_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+services:
+  - mysql
+before_install:
+  - mysql -e 'CREATE DATABASE categoria_teste;'
+  - mysql -e 'CREATE TABLE `categorias` (`id` int(11) NOT NULL AUTO_INCREMENT,`name` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;'
+  - mysql -e 'CREATE TABLE `usuarios` (`id` int(11) NOT NULL AUTO_INCREMENT,`email` varchar(255) DEFAULT NULL,`password` varchar(255) DEFAULT NULL,PRIMARY KEY (`id`) ENGINE=InnoDB DEFAULT CHARSET=latin1;'
+script:
+  - npm test

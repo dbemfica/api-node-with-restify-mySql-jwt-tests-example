@@ -12,8 +12,6 @@
     "type": "git",
     "url": "https://github.com/dbemfica/api-node-with-restify-mySql-jwt-tests-example"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^4.0.0",
