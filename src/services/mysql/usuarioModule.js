@@ -1,4 +1,4 @@
-const crypto = require('../../config/crypto');
+const crypto = require('../../../config/crypto');
 const usuarioModule = deps => {
     return {
         all: () => {

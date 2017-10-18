@@ -1,4 +1,4 @@
-const jwt = require("../config/jwt");
+const jwt = require("../../../config/jwt");
 const jwtMiddleware = () => {
     return async (req,res,next) => {
         if( jwt.exclusions.includes(req.href()) === false ){

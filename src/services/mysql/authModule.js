@@ -1,5 +1,5 @@
-const crypto = require("../../config/crypto");
-const jwt = require("../../config/jwt");
+const crypto = require('../../../config/crypto');
+const jwt = require("../../../config/jwt");
 const authModule = deps => {
     return {
         autenticate: (email,password) => {
