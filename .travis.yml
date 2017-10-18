@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "8.6"
 env:
-  - MYSQL_HOST=localhost
+  - MYSQL_HOST=127.0.0.1
   - MYSQL_USER=root
   - MYSQL_PASSWORD=
   - MYSQL_DATABASE_TEST=categoria_teste
